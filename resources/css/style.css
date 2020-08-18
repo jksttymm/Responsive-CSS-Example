@@ -9,7 +9,7 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     text-transform: capitalize;
-    color: white;
+    /*color: white;*/
 }
 
 .row {
@@ -21,6 +21,15 @@ h1 {
     margin-top: 0;
     font-weight: 300;
     font-size: 300%;
+    color: white;
+}
+
+h3{
+    margin-bottom: 8px;
+}
+
+p{
+    text-transform: none;
 }
 
 .links {
@@ -46,6 +55,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/hero.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .header-content {
@@ -63,7 +73,15 @@ header {
     margin-top: 24px;
 }
 
+.logo-navigation{
+    margin-top: 25px;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
 .navigation-inside-header li {
+    margin-top: 25px;
     display: inline-block;
     margin-left: 12px;
 }
@@ -71,5 +89,19 @@ header {
 .navigation-inside-header a {
     text-decoration: none;
     color: white;
+}
 
+.sec-before-icons {
+    margin: 12px auto;
+    color: black;
+    text-align: center;
+}
+
+.sec-before-icons h2 {
+    margin-bottom: 4px;
+}
+
+ion-icon{
+    font-size: 400%;
+    padding: 8px;
 }

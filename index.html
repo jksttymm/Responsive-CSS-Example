@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Foods</title>
     <link href="vendors/css/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
 </head>
 <body>
 <header>
     <!-- unordered list for menu navigation   -->
     <div class="row">
+        <img class="logo-navigation" src="resources/img/logo-white.png" alt="logo omnifood"/>
         <ul class="navigation-inside-header">
             <li><a href="#">Food Delivery</a></li>
             <li><a href="#">How it Works</a></li>
@@ -26,6 +29,51 @@
         <a class="links showmemore" href="#">Show me more </a>
     </div>
 </header>
+
+<section>
+    <div class="row sec-before-icons">
+        <h2>Get food fast — not fast food.</h2>
+        <p style="font-size: 120%">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4">
+            <ion-icon name="infinite-outline"></ion-icon>
+            <h3>
+                Up to 365 days/year
+            </h3>
+            <p>
+                Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+            </p>
+        </div>
+        <div class="col span-1-of-4">
+            <ion-icon name="stopwatch-outline"></ion-icon>
+            <h3>
+                Ready in 20 minutes
+            </h3>
+            <p>
+                You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+            </p>
+        </div>
+        <div class="col span-1-of-4">
+            <ion-icon name="logo-apple"></ion-icon>
+            <h3>
+                100% organic
+            </h3>
+            <p>
+                All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+            </p>
+        </div>
+        <div class="col span-1-of-4">
+            <ion-icon name="cart-outline"></ion-icon>
+            <h3>
+                Order anything
+            </h3>
+            <p>
+                We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+            </p>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
