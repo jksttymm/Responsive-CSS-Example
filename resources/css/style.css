@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*just for fun*/
+    border: 1px solid transparent;
 }
+
+/*just for fun started*/
+*:hover {
+    border: 1px solid orange;
+}
+
+/*end of just for fun started*/
 
 html {
     font-family: 'lato', Arial, sans-serif;
@@ -24,15 +33,16 @@ h1 {
     color: white;
 }
 
-h3{
+h3 {
     margin-bottom: 8px;
 }
 
-p{
+p {
     text-transform: none;
 }
 
-.links {
+.links:link,
+.links:visited {
     text-decoration: none;
     color: white;
     font-weight: 400;
@@ -44,10 +54,23 @@ p{
     border: 1px solid transparent;
 }
 
-.showmemore {
+.showmemore:link,
+.showmemore:visited {
     color: orange;
     background-color: transparent;
     border: 1px solid orange;
+}
+
+.showmemore:hover,
+.showmemore:active {
+    color: white;
+    border: 1px solid white;
+    transition: color 0.73s, border 0.73s;
+}
+
+.mainlink:hover,
+.mainlink:active {
+    border-color: white;
 }
 
 header {
@@ -71,9 +94,10 @@ header {
     float: right;
     list-style: none;
     margin-top: 24px;
+
 }
 
-.logo-navigation{
+.logo-navigation {
     margin-top: 25px;
     float: left;
     height: 100px;
@@ -81,9 +105,16 @@ header {
 }
 
 .navigation-inside-header li {
+    padding-bottom: 4px;
     margin-top: 25px;
     display: inline-block;
     margin-left: 12px;
+    border-bottom: solid 2px transparent;
+}
+
+.navigation-inside-header li:hover {
+    transition: border-bottom-color 0.73s;
+    border-bottom: solid 2px orange;
 }
 
 .navigation-inside-header a {
@@ -101,7 +132,22 @@ header {
     margin-bottom: 4px;
 }
 
-ion-icon{
+.sec-before-icons h2:after {
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin: 10px auto 0;
+}
+
+ion-icon {
     font-size: 400%;
     padding: 8px;
 }
+
+ion-icon:hover {
+    /* i want to change there color    */
+    /*background-color: red;*/
+}
+
