@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     /*just for fun*/
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
 }
 
 /*just for fun started*/
 *:hover {
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
 }
 
 /*end of just for fun started*/
@@ -105,11 +105,12 @@ header {
 }
 
 .navigation-inside-header li {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
     margin-top: 25px;
     display: inline-block;
     margin-left: 12px;
     border-bottom: solid 2px transparent;
+    transition: border-bottom-color 0.9s;
 }
 
 .navigation-inside-header li:hover {
@@ -129,7 +130,10 @@ header {
 }
 
 .sec-before-icons h2 {
+    line-height: 145%;
     margin-bottom: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .sec-before-icons h2:after {
@@ -138,16 +142,57 @@ header {
     width: 100px;
     height: 2px;
     background-color: orange;
-    margin: 10px auto 0;
+    margin: 10px auto 20px;
+}
+
+.section-features {
+    margin-bottom: 30px;
 }
 
 ion-icon {
     font-size: 400%;
     padding: 8px;
+    color: black;
+    transition: color 1.73s;
 }
 
 ion-icon:hover {
     /* i want to change there color    */
     /*background-color: red;*/
+    color: orange;
+    transition: color 0.73s;
 }
 
+/*Section Meals*/
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transition: transform 1s, opacity 0.4s;
+    transform: scale(1.15);
+
+}
+
+.meal-photo img:hover {
+    transition: transform 0.4s;
+    opacity: 1;
+    transform: scale(1.03);
+}
